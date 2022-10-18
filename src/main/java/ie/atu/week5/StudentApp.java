@@ -14,5 +14,9 @@ public class StudentApp {
         String email = input.nextLine();
         System.out.println("You entered " + email);
 
+        System.out.println("Please enter students course");
+        String course = input.nextLine();
+        System.out.println("You entered " + course);
+
     }
 }
