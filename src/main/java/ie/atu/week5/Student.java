@@ -6,7 +6,7 @@ public class Student {
     private String email;
     private String course;
 
-    public String getName() {
+    public String getName() { //GETTER AND SETTER
         return name;
     }
 
@@ -34,7 +34,7 @@ public class Student {
     }
     public Student(String name){
         this.name = name;
-    }
+    } //LAST CONSTRUCTOR
     public Student(String name, String email, String course){
         this.name = name;
         this.email = email;

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class StudentApp {
 
     public static void main(String[] args) {
-        System.out.println("Please enter students name"); //THIS IS TO GET THE STUDENTS FIRST NAME AND OTHER DETAILS
+        System.out.println("Please enter students name"); //THIS IS TO GET THE STUDENTS FIRST NAME AND OTHER DETAILS (getter and setter)
         Scanner input = new Scanner(System.in); //SCANNER
         String name = input.nextLine();
         Student Student1 = new Student();
@@ -23,7 +23,7 @@ public class StudentApp {
 
         System.out.println("Please enter the name of another student: ");  //USING CONSTRUCTUR GETTERS AND SETTERS TO GET OTHER STUDENTS INFO AND STORE IT
         String name1 = input.nextLine();
-        Student student2 = new Student("" + name1);
+        Student student2 = new Student("" + name1); //first overload construcot
 
         System.out.println("Please enter the email of another student: ");
         String email1 = input.nextLine();
@@ -42,9 +42,9 @@ public class StudentApp {
         System.out.println("Please enter the course of another student: ");
         String course2= input.nextLine();
 
-        Student student3 = new Student("" + name2, ""+ email2, ""+course2); //using constructor
+        Student student3 = new Student("" + name2, ""+ email2, ""+course2); //using constructor for student 3 info
 
-
+//LAST LONG PRINT FOR  ALL STUDENTS INFO ALL TOGETHER
         System.out.println("\t Student 1 Details\nStudentName: " +Student1.getName());
         System.out.println("\t                  \nStudentEmail: "+Student1.getEmail());
         System.out.println("\t                  \nStudentCourse: "+Student1.getCourse());
